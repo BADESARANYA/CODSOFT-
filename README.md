@@ -1,18 +1,18 @@
-# Initialize an empty to-do list
+
 todo_list = []
 
-# Function to add an item to the to-do list
+
 def add_item(item):
     todo_list.append(item)
     print(f"Added '{item}' to the to-do list.")
 
-# Function to display the to-do list
+
 def display_list():
     print("To-Do List:")
     for i, item in enumerate(todo_list, start=1):
         print(f"{i}. {item}")
 
-# Function to edit an item in the to-do list
+
 def edit_item(index, new_item):
     if 1 <= index <= len(todo_list):
         todo_list[index - 1] = new_item
@@ -20,7 +20,7 @@ def edit_item(index, new_item):
     else:
         print("Invalid index. Item not edited.")
 
-# Function to delete an item from the to-do list
+
 def delete_item(index):
     if 1 <= index <= len(todo_list):
         deleted_item = todo_list.pop(index - 1)
